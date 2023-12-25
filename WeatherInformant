@@ -1,0 +1,24 @@
+# Weather Informant
+
+print("The program takes a series of prompts and replies based on the given conditions")
+degree = input("Enter what temperature format you prefer: (F) for Fahrenheit or (C) for Celsius ")
+if degree.upper() == "F":
+    temperature = input("Please enter the current temperature in Fahrenheit: ")
+    current_temp = int(temperature)
+    if current_temp > 75:
+        print("It's a hot day, drink plenty of water")
+    elif current_temp < 64:
+        print("It's a cold day, wear warm clothes")
+    else:
+        print("It's neither hot nor cold, have a great day")
+elif degree.upper() == "C":
+    temperature = input("Please enter the current temperature in Celsius: ")
+    current_temp = int(temperature)
+    if current_temp > 24:
+        print("It's a hot day, drink plenty of water")
+    elif current_temp < 18:
+        print("It's a cold day, wear warm clothes")
+    else:
+        print("It's neither hot nor cold, have a great day")
+else:
+    print("The metric for temperature entered does not match (F) for Fahrenheit or (C) for Celsius  ")
